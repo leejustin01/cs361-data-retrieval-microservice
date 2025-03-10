@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Speed",
+    "description": "Gain a 15% speed increase when moving in bushes."
+  },
+  {
+    "name": "Health",
+    "description": "Recover health 50% more effectively."
+  },
+  {
+    "name": "Damage",
+    "description": "Deal 15% extra damage when your Brawler is below 50% Health."
+  },
+  {
+    "name": "Vision",
+    "description": "Reveal opponents for 2 seconds after dealing damage to them."
+  },
+  {
+    "name": "Shield",
+    "description": "Gain extra 900 health as a consumable shield. The shield regenerates in 10 seconds, when at full health."
+  },
+  {
+    "name": "Reload Speed",
+    "description": "15% faster reload."
+  },
+  {
+    "name": "Super Charge",
+    "description": "Super charges 10% faster."
+  },
+  {
+    "name": "Thicc Head",
+    "description": "Tick’s Super ‘HeadFirst’ gets 1000 more hit points (Tick only)."
+  },
+  {
+    "name": "Talk to the Hand",
+    "description": "Increases Magic Hand range by one Tile (Gene only)."
+  },
+  {
+    "name": "Enduring Toxins",
+    "description": "Increases damage done by poison effects (Crow only)."
+  },
+  {
+    "name": "Sticky Spikes",
+    "description": "Super now slows 30% more effectively (Spike only)."
+  },
+  {
+    "name": "Lingering Smoke",
+    "description": "Increase Super duration by two seconds (Leon only)."
+  },
+  {
+    "name": "Exhausting Storm",
+    "description": "Decreases enemy damage by 20% while in Sandstorm (Sandy only)."
+  },
+  {
+    "name": "Sticky Oil",
+    "description": "Amber’s oil spill now slightly slows enemy Brawlers (Amber only)."
+  },
+  {
+    "name": "Pet Power",
+    "description": "Brawler Pets deal 25% more damage/ healing (Jessie, Nita, Mr. P, Tara, Penny)."
+  },
+  {
+    "name": "Quadruplets",
+    "description": "Eve’s Super now spawns an additional hatchling (Eve only)."
+  },
+  {
+    "name": "Super Turret",
+    "description": "Increases the healing of Pam's Turret by 20% (Pam only)."
+  },
+  {
+    "name": "Gadget Cooldown",
+    "description": "Reduces Gadget cooldown by 15%"
+  },
+  {
+    "name": "Bat Storm",
+    "description": "Mortis’ Super projectile speed is increased (Mortis only)."
+  }
+]
