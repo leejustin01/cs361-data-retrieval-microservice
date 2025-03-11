@@ -1,0 +1,20 @@
+{
+  "name": "cs361-data-retrieval-microservice",
+  "version": "1.0.0",
+  "description": "microservice that provides description for a given brawler",
+  "main": "data-retrieval.js",
+  "scripts": {
+    "start": "node data-retrieval.js",
+    "dev": "nodemon data-retrieval.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
