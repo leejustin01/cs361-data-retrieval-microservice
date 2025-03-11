@@ -4,7 +4,7 @@ const fs = require('fs');
 const PORT = 8080;
 const app = express();
 
-let arr = [];
+let brawlers = [];
 
 
 const retrieveBrawlers = async () => {
@@ -14,23 +14,23 @@ const retrieveBrawlers = async () => {
             return;
         }
 
-        arr = JSON.parse(data);
+        brawlers = JSON.parse(data);
     });
 };
 
-app.post('/brawler', async (req, res) => {
-    const name = req.body.name;
-    console.log(name);
-    await retrieveBrawlers();
+app.get('/brawler/:name', async (req, res) => {
+    const name = req.params.name;
 
-    for (let brawler of arr) {
+    for (brawler of brawlers) {
         if (brawler.name === name) {
-            console.log("Sending: ", brawler.description);
-            res.send(brawler.description);
+            res.status(200).json(brawler);
+            return;
         }
     }
+    res.status(400).json({ ErrorMessage: "Brawler not found." });
 });
 
 app.listen(PORT, () => {
+    retrieveBrawlers();
     console.log(`Data retrieval microservice listening on port ${PORT}...`);
 })

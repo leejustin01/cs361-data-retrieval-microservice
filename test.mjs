@@ -1,12 +1,10 @@
 import fetch from 'node-fetch';
 
-const test = async () => {
-    const response = await fetch('http://localhost:8080/brawler', {
-        method: "POST",
-        body: JSON.stringify({ name: "Amber" })
-    });
-    
-    console.log(response.json());
+const test = async name => {
+    const response = await fetch('http://localhost:8080/brawler/' + name);
+    const json = await response.json();
+    const description = json.description;
+    console.log(description);
 }
 
-test();
+test('Amber');
