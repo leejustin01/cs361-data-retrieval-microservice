@@ -1,8 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const fs = require('fs');
 
 const PORT = 8080;
 const app = express();
+app.use(cors({
+    origin: 'http://localhost:3000'
+}));
 
 let brawlers = [];
 let gears = [];
@@ -33,7 +37,7 @@ app.get('/brawler/:name', async (req, res) => {
     const name = req.params.name;
 
     for (brawler of brawlers) {
-        if (brawler.name === name) {
+        if (brawler.name.toLowerCase() === name.toLowerCase()) {
             res.status(200).json(brawler);
             return;
         }
@@ -45,7 +49,7 @@ app.get('/gear/:name', async (req, res) => {
     const name = req.params.name;
 
     for (gear of gears) {
-        if (gear.name === name) {
+        if (gear.name.toLowerCase() === name.toLowerCase()) {
             res.status(200).json(gear);
             return;
         }
